@@ -18,7 +18,12 @@
           Kr Maurya</span
         >
       </div>
-      <ul class="nav-links">
+
+      <button class="menu-toggle" onclick="toggleMenu()">
+         <i class="fas fa-bars"></i>
+       </button>
+
+      <ul class="nav-links"id="navLinks">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -280,31 +285,33 @@
           </div>
         </div>
         <div class="project-card">
-         <img src="https://via.placeholder.com/400x200" alt="Project Image" />
-         <h3>Weather Forecasting</h3>
-         <p>
-           The Weather Forecasting System is a web-based application designed to provide
-           real-time weather updates for specific locations. It allows users to view current
-           weather conditions, forecasts, temperature, humidity, wind speed, and more. This
-           system helps users plan their activities efficiently by offering accurate and timely
-           weather information through an intuitive interface.
-           
-         </p>
-         <div class="skill-tags">
-          
-           <span>Google Weather API</span>
-           <span>HTML</span>
-           <span>CSS</span>
-           <span>jQuery</span>
-           <span>VS Code</span>
-         </div>
-         <div class="buttons">
-           <a href="#">Live Demo</a>
-           <a href="https://github.com/adityakm79/weather-product-js" target="_blank">View Code</a>
-         </div>
-       </div>
+          <img src="https://via.placeholder.com/400x200" alt="Project Image" />
+          <h3>Weather Forecasting</h3>
+          <p>
+            The Weather Forecasting System is a web-based application designed
+            to provide real-time weather updates for specific locations. It
+            allows users to view current weather conditions, forecasts,
+            temperature, humidity, wind speed, and more. This system helps users
+            plan their activities efficiently by offering accurate and timely
+            weather information through an intuitive interface.
+          </p>
+          <div class="skill-tags">
+            <span>Google Weather API</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>jQuery</span>
+            <span>VS Code</span>
+          </div>
+          <div class="buttons">
+            <a href="#">Live Demo</a>
+            <a
+              href="https://github.com/adityakm79/weather-product-js"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
       </div>
-        
     </section>
 
     <section id="skills" class="skills-section">
@@ -486,5 +493,10 @@
 
         this.reset();
       });
+
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
   </script>
 </html>
