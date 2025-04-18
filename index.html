@@ -1,155 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Kumar Maurya - Software Engineer</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Aditya Kumar Maurya - Software Engineer</title>
-   <link rel="stylesheet" href="CSS/style.css">
-</head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <span><i class="fa-solid fa-user-graduate"></i> </span>Aditya<span>
+          Kr Maurya</span
+        >
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#">Certificates</a></li>
+        <li><a href="#resume-download">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-<body>
-   <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <!-- <a href="#blog">Blog</a> -->
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-   </nav>
+    <!-- Header Section -->
+    <header class="hero">
+      <div class="overlay">
+        <div class="hero-content">
+          <h1>Aditya Kumar Maurya</h1>
+          <h2>Software Engineer | FullStack Developer</h2>
+          <div class="header-contact">
+            <a href="tel:+919598690086"
+              ><i class="fas fa-phone"></i> +91 9598690086</a
+            >
+            <a href="mailto:adityakm79@gmail.com"
+              ><i class="fas fa-envelope"></i> adityakm79@gmail.com</a
+            >
+            <a href="https://github.com/adityakm79"
+              ><i class="fas fa-globe"></i> Porfolio</a
+            >
+          </div>
 
-   <header id="home">
-      <h1>ADITYA KUMAR MAURYA</h1>
-      <p>Software Engineer | Innovator | Problem Solver</p>
-   </header>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/adityakm79/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/adityakm79" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://wa.me/919598690086" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+      </div>
+    </header>
 
-   <section id="about">
+    <section id="about" class="about-section">
       <h2>About Me</h2>
-      <p>My name is Aditya Kumar Maurya, and I am a full-stack developer specializing in Python.
-         I have experience in both frontend and backend development,
-         working with modern frameworks and technologies to build scalable and efficient web applications.
-         I enjoy solving complex problems, optimizing code, and creating seamless user experiences.
-         My passion for coding, along with my ability to learn quickly and adapt to new challenges,
-         makes me a valuable asset to any development team</p>
-   </section>
+      <div class="about-container">
+        <div class="about-left">
+          <p>
+            My name is Aditya Kumar Maurya, and I am a full-stack developer
+            specializing in Python. I have experience in both frontend and
+            backend development, working with modern frameworks and technologies
+            to build scalable and efficient web applications.
+          </p>
+          <p>
+            Passionate about solving complex problems and learning emerging
+            technologies. Seeking an opportunity to apply my technical skills in
+            a dynamic environment.
+          </p>
+          <a class="btn-contact" href="#contact">Contact Me</a>
+        </div>
 
-   <section id="projects">
-      <h2>Projects</h2>
+        <div class="about-right">
+          <div class="skills-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="tag red">HTML</span>
+              <span class="tag gray">CSS</span>
+              <span class="tag orange">JavaScript</span>
+              <span class="tag green">JQuery</span>
+              <span class="tag red">React.js</span>
+              <span class="tag green">Bootstrap</span>
+            </div>
+          </div>
 
-      <div class="project">
-         <h3>Evidence Protection Management System </h3>
-         <p>Built a evidence protection management system using Html,Css,Jquery',JavaScript,Bootstrap,Mysql and
-            language is Python and framework is
-            Django</p>
-         <!-- <label for="port">Enter Localhost Port:</label>
-         <input type="text" id="port" placeholder="3000" class="btn-responsive">
-         <button onclick="openLocalProject()" class="btn-responsive">View Project</button> -->
-         <button onclick="window.open('http://localhost:8000', '_blank')" class="btn-responsive btn-download">View
-            Project</button>
+          <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="tag green">Python</span>
+              <span class="tag gray">Oops</span>
+              <span class="tag orange">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3>Backend Development</h3>
+            <div class="skill-tags">
+              <span class="tag green">Django</span>
+              <span class="tag green">Django Rest APIs</span>
+              <span class="tag orange">MySQL</span>
+              <span class="tag tag red">Firebase</span>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Machine Learning Library</h3>
+            <div class="skill-tags">
+              <span class="tag green">NumPy</span>
+              <span class="tag orange">Pandas</span>
+              <span class="tag red">Matplotlib</span>
+              <span class="tag gray">Seaborn</span>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class=" project">
-         <h3>Product Management System</h3>
-         <p>Built a product management system using Html,css,vscode, mysql and language is Python and framework is
-            Django</p>
-         <button onclick="window.open('http://localhost:8000', '_blank')" class="btn-responsive btn-download">View
-            Project</button>
+    <section class="education-section">
+      <h2>Education & Experience</h2>
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h3>B.Tech Computer Science Engineering</h3>
+            <p>
+              <strong
+                >Dr. A.P.J. Abdul Kalam Technical University, Lucknow</strong
+              >
+            </p>
+            <p>Prasad Institute of Technology</p>
+            <p>Relevant coursework: Web Developer, Full stack Developer</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h3>Diploma Electrical Engineer</h3>
+            <p><strong>Board of Technical Education, Uttar Pradesh</strong></p>
+            <p>Government Polytechnic Kenaura, Sultanpur</p>
+            <p>Relevant coursework: Build a Direct On Line Starter</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h3>Intermediate Math</h3>
+            <p><strong>Uttar Pradesh Madhyamik Shiksha Parishad</strong></p>
+            <p>MOHD Hasan Inter College, Jaunpur</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h3>High School</h3>
+            <p><strong>Uttar Pradesh Madhyamik Shiksha Parishad</strong></p>
+            <p>R A S I C RP D Singh Karanjakala Jaunpur</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h3>Internship</h3>
+            <p><strong>Mindrops Solutions Pvt. Ltd, Delhi</strong></p>
+            <ul>
+              <li>
+                Built dynamic web applications using HTML, CSS, JavaScript,
+                Bootstrap, Django,Python, MySQL
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class=" project">
-         <h3>Student Management System</h3>
-         <p>Built a student management system using Html,css,vscode, mysql and language is Python and framework is
-            Django</p>
-         <button onclick="window.open('http://localhost:8000', '_blank')" class="btn-responsive btn-download">View
-            Project</button>
-      </div>
-      <div class=" project">
-         <h3>News Portal website</h3>
-         <p>Built a news portal website using Html,css,bootstrap,vscode,sqlite and language is Python and
-            framework is
-            Django</p>
-         <button onclick="window.open('http://localhost:8000', '_blank')" class="btn-responsive btn-download">View
-            Project</button>
-      </div>
-      <div class=" project">
-         <h3>Generate API</h3>
-         <p>Built a API of product management system using JavaScript,mysql and language is Python and
-            framework is
-            Django rest API</p>
-         <button onclick="window.open('http://localhost:8000', '_blank')" class="btn-responsive btn-download">View
-            Project</button>
-      </div>
+    </section>
 
-   </section>
-
-   <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-         <div class="skill project">HTML</div>
-         <div class="skill project">CSS</div>
-         <div class="skill project">JavaScript</div>
-         <div class="skill project">JQuery</div>
-         <!-- <div class="skill project">React</div> -->
-         <div class="skill project">Bootstrap</div>
-         <div class="skill project">Python</div>
-         <div class="skill project">Django</div>
-         <div class="skill project">Django Rest API</div>
-         <div class="skill project">SQL</div>
-         <div class="skill project">Oops</div>
-         <div class="skill project">Numpy</div>
-         <div class="skill project">Pandas</div>
-         <div class="skill project">Matplotlib</div>
-         <div class="skill project">Seaborn</div>
-      </div>
-   </section>
-
-   <!-- <section id="blog">
-      <h2>Blog</h2>
-
-      <div class="project">
-         <h3> How to Build Responsive Websites</h3>
-         <p>Learn how to create fully responsive and modern web applications with best practices.</p>
-         <a href="#">Read More</a>
-      </div>
-
-      <div class="project">
-         <h3> Mastering JavaScript ES6+</h3>
-         <p>A deep dive into modern JavaScript features and how they improve your development workflow.</p>
-         <a href="#">Read More</a>
-      </div>
-
-   </section> -->
-
-   <section id="resume">
-      <h2>Resume</h2>
-      <p>Download my resume to explore my experience and technical expertise:</p>
-      <a href="AdityaKumarMauryaResume.pdf" download>
-         <button class="btn-download">Download Resume</button>
+    <section id="resume-download" class="download-section">
+      <a href="AdityaKumarMauryaResume.pdf" download class="download-btn">
+        <span><i class="fa-solid fa-download"></i></span> Download Resume
       </a>
-   </section>
+    </section>
 
-   <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Connect with me via:</p>
-      <div class="contact-links">
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Projects</h2>
 
-         <a href="mailto:adityakm79@gmail.com">Email</a>
-         <a href="https://www.linkedin.com/in/adityakm79/" target="_blank">LinkedIn</a>
-         <a href="https://github.com/adityakm79" target="_blank">GitHub</a>
-         <a href="tel:+919598690086">Contact No : +91-9598690086</a>
+      <div class="projects-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200" alt="Project Image" />
+          <h3>Evidence Protection Management System</h3>
+          <p>
+            The Evidence Protection Management System is a secure software
+            application designed to store, manage, and protect critical
+            evidence. It ensures proper documentation, access control, and
+            prevent tampering. Key features may include secure data storage,
+            role-based access, making it an essential tool for legal and
+            investigative organizations.
+          </p>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>JQuery</span>
+            <span>MySQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>Sendgrid_api_key</span>
+            <span>VS Code</span>
+          </div>
+          <div class="buttons">
+            <a href="#">Live Demo</a>
+            <a
+              href="https://github.com/adityakm79/evidence-protection-mgmt-system"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200" alt="Project Image" />
+          <h3>Product Management System</h3>
+          <p>
+            The Product Management System is a software application designed to
+            the management of products within an organization. It allows users
+            to add, update, delete products efficiently. Key features may
+            include categorization, price management. The system aims to improve
+            product organization, reduce errors, and enhance decisionmaking for
+            businesses.
+          </p>
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+            <span>Django</span>
+            <span>MySQL</span>
+            <span>VS Code</span>
+          </div>
+          <div class="buttons">
+            <a href="#">Live Demo</a>
+            <a
+              href="https://github.com/adityakm79/product-management"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200" alt="Project Image" />
+          <h3>News Portal Website</h3>
+          <p>
+            The News Portal Website is a web-based platform designed to deliver
+            the latest news across various categories. It allows users to read,
+            publish, and manage news articles efficiently. Key features may
+            include category-based news organization, user authentication,
+            search functionality, and multimedia integration. The system ensures
+            a seamless experience for both readers and content creators,
+            providing real-time updates and an engaging interface.
+          </p>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>Sqlite</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>VS Code</span>
+          </div>
+          <div class="buttons">
+            <a href="#">Live Demo</a>
+            <a href="#">View Code</a>
+          </div>
+        </div>
+        <div class="project-card">
+         <img src="https://via.placeholder.com/400x200" alt="Project Image" />
+         <h3>Weather Forecasting</h3>
+         <p>
+           The Weather Forecasting System is a web-based application designed to provide
+           real-time weather updates for specific locations. It allows users to view current
+           weather conditions, forecasts, temperature, humidity, wind speed, and more. This
+           system helps users plan their activities efficiently by offering accurate and timely
+           weather information through an intuitive interface.
+           
+         </p>
+         <div class="skill-tags">
+          
+           <span>Google Weather API</span>
+           <span>HTML</span>
+           <span>CSS</span>
+           <span>jQuery</span>
+           <span>VS Code</span>
+         </div>
+         <div class="buttons">
+           <a href="#">Live Demo</a>
+           <a href="https://github.com/adityakm79/weather-product-js" target="_blank">View Code</a>
+         </div>
+       </div>
       </div>
-   </section>
+        
+    </section>
 
-   <footer>
-      <p>&copy; 2025 Aditya Kumar Maurya. All rights reserved.</p>
-   </footer>
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-category">
+        <h3>Frontend Development</h3>
+        <div class="skill-tags">
+          <span class="tag green">HTML5</span>
+          <span class="tag orange">CSS3</span>
+          <span class="tag red">JavaScript</span>
+          <span class="tag green">JQuery</span>
+          <span class="tag gray">React.js</span>
+          <span class="tag orange">Bootstrap 5</span>
+        </div>
+      </div>
 
-</body>
-<!-- <script>
-   function openLocalProject() {
-      const port = document.getElementById('port').value;
-      window.open(`http://localhost:${port}`, '_blank');
-   }
-</script> -->
+      <div class="skills-category">
+        <h3>Backend Development</h3>
+        <div class="skill-tags">
+          <span class="tag green">Django</span>
+          <span class="tag orange">Django Rest APIs</span>
+        </div>
+      </div>
 
+      <div class="skills-category">
+        <h3>Database & Cloud</h3>
+        <div class="skill-tags">
+          <span class="tag orange">MySQL</span>
+          <span class="tag red">Sqlite</span>
+          <span class="tag green">Firebase</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Programming Languages</h3>
+        <div class="skill-tags">
+          <span class="tag green">Python</span>
+          <span class="tag orange">Oops</span>
+          <span class="tag orange">JavaScript</span>
+        </div>
+      </div>
+      <div class="skills-category">
+        <h3>Machine Learning Library</h3>
+        <div class="skill-tags">
+          <span class="tag green">NumPy</span>
+          <span class="tag orange">Pandas</span>
+          <span class="tag red">Matplotlib</span>
+          <span class="tag gray">Seaborn</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Get In Touch</h2>
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <i class="fas fa-phone icon"></i>
+            <div class="contact-links">
+              <strong>Phone</strong><br />
+              <a href="tel:+919598690086">+91-9598690086</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope icon"></i>
+            <div class="contact-links">
+              <strong>Email</strong><br />
+              <a href="mailto:adityakm79@gmail.com">adityakm79@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-location-dot icon"></i>
+            <div class="contact-links">
+              <strong>Location</strong><br />
+              <a
+                href="https://www.google.com/maps/place/Jaunpur,+Uttar+Pradesh+222001,+India"
+                target="_blank"
+              >
+                Jaunpur, India, 222001
+              </a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-globe icon"></i>
+            <div class="contact-links">
+              <strong>Website</strong><br />
+              <a href="https://github.com/adityakm79" target="_blank"
+                >All website on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form id="contact-form">
+            <label>Your Name</label>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label>Your Email</label>
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Subject" required />
+
+            <label>Your Message</label>
+            <textarea
+              placeholder="Type your message..."
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <p id="status-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h3>Aditya<span> Kr Maurya</span></h3>
+      <p>Full Stack Developer | Software Engineer</p>
+      <div>
+        <a href="https://www.linkedin.com/in/adityakm79/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/adityakm79" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://wa.me/919598690086" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© 2025 Aditya Kumar Maurya. All rights reserved.</p>
+      <p>
+        I hereby declare that all the information provided is true and correct
+        to the best of my knowledge and belief.
+      </p>
+    </footer>
+  </body>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("2BC7ceRLeK4YF_Kg4"); // Replace with your EmailJS public key
+    })();
+
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("123456789", "template_cejr7yv", this).then(
+          function () {
+            document.getElementById("status-message").innerText =
+              "Message sent successfully!";
+          },
+          function (error) {
+            document.getElementById("status-message").innerText =
+              "Failed to send message: " + error.text;
+          }
+        );
+
+        this.reset();
+      });
+  </script>
 </html>
