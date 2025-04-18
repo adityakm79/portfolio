@@ -20,10 +20,10 @@
       </div>
 
       <button class="menu-toggle" onclick="toggleMenu()">
-         <i class="fas fa-bars"></i>
-       </button>
+        <i class="fas fa-bars"></i>
+      </button>
 
-      <ul class="nav-links"id="navLinks">
+      <ul class="nav-links" id="navLinks">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -469,35 +469,41 @@
       </p>
     </footer>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("2BC7ceRLeK4YF_Kg4"); // Replace with your EmailJS public key
-    })();
+    <script>
+      (function () {
+        emailjs.init("2BC7ceRLeK4YF_Kg4"); // Replace with your EmailJS public key
+      })();
 
-    document
-      .getElementById("contact-form")
-      .addEventListener("submit", function (e) {
-        e.preventDefault();
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
 
-        emailjs.sendForm("123456789", "template_cejr7yv", this).then(
-          function () {
-            document.getElementById("status-message").innerText =
-              "Message sent successfully!";
-          },
-          function (error) {
-            document.getElementById("status-message").innerText =
-              "Failed to send message: " + error.text;
-          }
-        );
+          emailjs.sendForm("123456789", "template_cejr7yv", this).then(
+            function () {
+              document.getElementById("status-message").innerText =
+                "Message sent successfully!";
+            },
+            function (error) {
+              document.getElementById("status-message").innerText =
+                "Failed to send message: " + error.text;
+            }
+          );
 
-        this.reset();
+          this.reset();
+        });
+
+      function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+      }
+
+      document.querySelectorAll("#navLinks a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const nav = document.getElementById("navLinks");
+          nav.classList.remove("active");
+        });
       });
-
-    function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("active");
-    }
-  </script>
+    </script>
   </body>
-  
 </html>
