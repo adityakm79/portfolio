@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -29,7 +33,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#">Certificates</a></li>
-        <li><a href="#resume-download">Resume</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -41,7 +45,7 @@
           <h1>Aditya Kumar Maurya</h1>
           <h2>Software Engineer | FullStack Developer</h2>
           <div class="header-contact">
-            <a href="tel:+919598690086"
+            <a href="tel:9598690086"
               ><i class="fas fa-phone"></i> +91 9598690086</a
             >
             <a href="mailto:adityakm79@gmail.com"
@@ -132,7 +136,7 @@
       </div>
     </section>
 
-    <section class="education-section">
+    <section class="education-section" id="resume">
       <h2>Education & Experience</h2>
       <div class="timeline">
         <div class="container left">
@@ -184,7 +188,7 @@
       </div>
     </section>
 
-    <section id="resume-download" class="download-section">
+    <section class="download-section">
       <a href="AdityaKumarMauryaResume.pdf" download class="download-btn">
         <span><i class="fa-solid fa-download"></i></span> Download Resume
       </a>
@@ -194,122 +198,199 @@
       <h2 class="section-title">Projects</h2>
 
       <div class="projects-container">
-        <!-- Project Card 1 -->
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Project Image" />
-          <h3>Evidence Protection Management System</h3>
-          <p>
-            The Evidence Protection Management System is a secure software
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Project Card 1 -->
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img
+                  src="image/evidence_protection.jpg"
+                  alt="Project Image"
+                />
+                <h3>Evidence Protection Management System</h3>
+                <p
+                  data-full-text="The Evidence Protection Management System is a secure software
             application designed to store, manage, and protect critical
             evidence. It ensures proper documentation, access control, and
             prevent tampering. Key features may include secure data storage,
             role-based access, making it an essential tool for legal and
-            investigative organizations.
-          </p>
-          <div class="skill-tags">
-            <span>Python</span>
-            <span>Django</span>
-            <span>JQuery</span>
-            <span>MySQL</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Bootstrap</span>
-            <span>Sendgrid_api_key</span>
-            <span>VS Code</span>
-          </div>
-          <div class="buttons">
-            <a href="#">Live Demo</a>
-            <a
-              href="https://github.com/adityakm79/evidence-protection-mgmt-system"
-              target="_blank"
-              >View Code</a
-            >
-          </div>
-        </div>
+            investigative organizations."
+                  data-is-short="true"
+                >
+                  The Evidence Protection Management System is a secure software
+                  application designed to store, manage, and protect critical
+                  evidence.
+                </p>
+                <button class="read-more-btn">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  Read More
+                </button>
+                <div class="skill-tags">
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>JQuery</span>
+                  <span>MySQL</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>Sendgrid_api_key</span>
+                  <span>VS Code</span>
+                </div>
+                <div class="buttons">
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo</a
+                  >
+                  <a
+                    href="https://github.com/adityakm79/evidence-protection-mgmt-system"
+                    target="_blank"
+                    ><i class="fab fa-github"></i> View Code</a
+                  >
+                </div>
+              </div>
+            </div>
 
-        <!-- Project Card 2 -->
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Project Image" />
-          <h3>Product Management System</h3>
-          <p>
-            The Product Management System is a software application designed to
+            <!-- Project Card 2 -->
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img
+                  src="image/product-mgmt.jpg"
+                  alt="Project Image"
+                />
+                <h3>Product Management System</h3>
+                <p
+                  data-full-text=" The Product Management System is a software application designed to
             the management of products within an organization. It allows users
             to add, update, delete products efficiently. Key features may
             include categorization, price management. The system aims to improve
             product organization, reduce errors, and enhance decisionmaking for
-            businesses.
-          </p>
-          <div class="skill-tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Python</span>
-            <span>Django</span>
-            <span>MySQL</span>
-            <span>VS Code</span>
-          </div>
-          <div class="buttons">
-            <a href="#">Live Demo</a>
-            <a
-              href="https://github.com/adityakm79/product-management"
-              target="_blank"
-              >View Code</a
-            >
-          </div>
-        </div>
+            businesses."
+                  data-is-short="true"
+                >
+                  The Product Management System is a software application
+                  designed to the management of products within an organization.
+                  It allows users to add, update, delete products efficiently.
+                </p>
+                <button class="read-more-btn">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  Read More
+                </button>
 
-        <!-- Project Card 3 -->
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Project Image" />
-          <h3>News Portal Website</h3>
-          <p>
-            The News Portal Website is a web-based platform designed to deliver
+                <div class="skill-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>MySQL</span>
+                  <span>VS Code</span>
+                </div>
+                <div class="buttons">
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo</a
+                  >
+                  <a
+                    href="https://github.com/adityakm79/product-management"
+                    target="_blank"
+                    ><i class="fab fa-github"></i> View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img
+                  src="image/news_portal.jpg"
+                  alt="Project Image"
+                />
+                <h3>News Portal Website</h3>
+                <p
+                  data-full-text=" The News Portal Website is a web-based platform designed to deliver
             the latest news across various categories. It allows users to read,
             publish, and manage news articles efficiently. Key features may
             include category-based news organization, user authentication,
             search functionality, and multimedia integration. The system ensures
             a seamless experience for both readers and content creators,
-            providing real-time updates and an engaging interface.
-          </p>
-          <div class="skill-tags">
-            <span>Python</span>
-            <span>Django</span>
-            <span>Sqlite</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Bootstrap</span>
-            <span>VS Code</span>
-          </div>
-          <div class="buttons">
-            <a href="#">Live Demo</a>
-            <a href="#">View Code</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Project Image" />
-          <h3>Weather Forecasting</h3>
-          <p>
-            The Weather Forecasting System is a web-based application designed
+            providing real-time updates and an engaging interface."
+                  data-is-short="true"
+                >
+                  The News Portal Website is a web-based platform designed to
+                  deliver the latest news across various categories. It allows
+                  users to read, publish, and manage news articles efficiently.
+                </p>
+                <button class="read-more-btn">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  Read More
+                </button>
+                <div class="skill-tags">
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>Sqlite</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>VS Code</span>
+                </div>
+                <div class="buttons">
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo</a
+                  >
+                  <a href="#"><i class="fab fa-github"></i> View Code</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="project-card">
+                <img
+                  src="image/weather.jpg"
+                  alt="Project Image"
+                />
+                <h3>Weather Forecasting</h3>
+                <p
+                  data-full-text=" The Weather Forecasting System is a web-based application designed
             to provide real-time weather updates for specific locations. It
             allows users to view current weather conditions, forecasts,
             temperature, humidity, wind speed, and more. This system helps users
             plan their activities efficiently by offering accurate and timely
-            weather information through an intuitive interface.
-          </p>
-          <div class="skill-tags">
-            <span>Google Weather API</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>jQuery</span>
-            <span>VS Code</span>
+            weather information through an intuitive interface."
+                  data-is-short="true"
+                >
+                  The Weather Forecasting System is a web-based application
+                  designed to provide real-time weather updates for specific
+                  locations. It allows users to view current weather conditions,
+                  forecasts, temperature, humidity, wind speed, and more.
+                </p>
+                <button class="read-more-btn">
+                  <i class="fa-solid fa-chevron-down"></i>
+                  Read More
+                </button>
+                <div class="skill-tags">
+                  <span>Google Weather API</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>jQuery</span>
+                  <span>VS Code</span>
+                </div>
+                <div class="buttons">
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo</a
+                  >
+                  <a
+                    href="https://github.com/adityakm79/weather-product-js"
+                    target="_blank"
+                    ><i class="fab fa-github"></i> View Code</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="buttons">
-            <a href="#">Live Demo</a>
-            <a
-              href="https://github.com/adityakm79/weather-product-js"
-              target="_blank"
-              >View Code</a
-            >
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -374,7 +455,7 @@
             <i class="fas fa-phone icon"></i>
             <div class="contact-links">
               <strong>Phone</strong><br />
-              <a href="tel:+919598690086">+91-9598690086</a>
+              <a href="tel:9598690086">+91-9598690086</a>
             </div>
           </div>
           <div class="info-item">
@@ -469,9 +550,10 @@
       </p>
     </footer>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       (function () {
-        emailjs.init("2BC7ceRLeK4YF_Kg4"); // Replace with your EmailJS public key
+        emailjs.init("2BC7ceRLeK4YF_Kg4");
       })();
 
       document
@@ -504,6 +586,47 @@
           nav.classList.remove("active");
         });
       });
+
+      document.querySelectorAll(".read-more-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const paragraph = button.previousElementSibling;
+          const isShort = paragraph.getAttribute("data-is-short") === "true";
+          const fullText = paragraph.getAttribute("data-full-text");
+          const shortText = fullText.split(".")[0] + "."; // optional: get only the first sentence
+
+          if (isShort) {
+            paragraph.textContent = fullText;
+            paragraph.setAttribute("data-is-short", "false");
+            button.innerHTML = `<i class="fa-solid fa-chevron-up"></i> Read Less`;
+          } else {
+            paragraph.textContent = shortText;
+            paragraph.setAttribute("data-is-short", "true");
+            button.innerHTML = `<i class="fa-solid fa-chevron-down"></i> Read More`;
+          }
+        });
+      });
+
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
     </script>
+   
   </body>
 </html>
