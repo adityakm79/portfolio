@@ -203,10 +203,7 @@
             <!-- Project Card 1 -->
             <div class="swiper-slide">
               <div class="project-card">
-                <img
-                  src="image/evidence_protection.jpg"
-                  alt="Project Image"
-                />
+                <img src="image/evidence_protection.jpg" alt="Project Image" />
                 <h3>Evidence Protection Management System</h3>
                 <p
                   data-full-text="The Evidence Protection Management System is a secure software
@@ -253,10 +250,7 @@
             <!-- Project Card 2 -->
             <div class="swiper-slide">
               <div class="project-card">
-                <img
-                  src="image/product-mgmt.jpg"
-                  alt="Project Image"
-                />
+                <img src="image/product-mgmt.jpg" alt="Project Image" />
                 <h3>Product Management System</h3>
                 <p
                   data-full-text=" The Product Management System is a software application designed to
@@ -301,10 +295,7 @@
             <!-- Project Card 3 -->
             <div class="swiper-slide">
               <div class="project-card">
-                <img
-                  src="image/news_portal.jpg"
-                  alt="Project Image"
-                />
+                <img src="image/news_portal.jpg" alt="Project Image" />
                 <h3>News Portal Website</h3>
                 <p
                   data-full-text=" The News Portal Website is a web-based platform designed to deliver
@@ -345,10 +336,7 @@
 
             <div class="swiper-slide">
               <div class="project-card">
-                <img
-                  src="image/weather.jpg"
-                  alt="Project Image"
-                />
+                <img src="image/weather.jpg" alt="Project Image" />
                 <h3>Weather Forecasting</h3>
                 <p
                   data-full-text=" The Weather Forecasting System is a web-based application designed
@@ -551,82 +539,6 @@
     </footer>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("2BC7ceRLeK4YF_Kg4");
-      })();
-
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          emailjs.sendForm("123456789", "template_cejr7yv", this).then(
-            function () {
-              document.getElementById("status-message").innerText =
-                "Message sent successfully!";
-            },
-            function (error) {
-              document.getElementById("status-message").innerText =
-                "Failed to send message: " + error.text;
-            }
-          );
-
-          this.reset();
-        });
-
-      function toggleMenu() {
-        const nav = document.getElementById("navLinks");
-        nav.classList.toggle("active");
-      }
-
-      document.querySelectorAll("#navLinks a").forEach((link) => {
-        link.addEventListener("click", () => {
-          const nav = document.getElementById("navLinks");
-          nav.classList.remove("active");
-        });
-      });
-
-      document.querySelectorAll(".read-more-btn").forEach((button) => {
-        button.addEventListener("click", () => {
-          const paragraph = button.previousElementSibling;
-          const isShort = paragraph.getAttribute("data-is-short") === "true";
-          const fullText = paragraph.getAttribute("data-full-text");
-          const shortText = fullText.split(".")[0] + "."; // optional: get only the first sentence
-
-          if (isShort) {
-            paragraph.textContent = fullText;
-            paragraph.setAttribute("data-is-short", "false");
-            button.innerHTML = `<i class="fa-solid fa-chevron-up"></i> Read Less`;
-          } else {
-            paragraph.textContent = shortText;
-            paragraph.setAttribute("data-is-short", "true");
-            button.innerHTML = `<i class="fa-solid fa-chevron-down"></i> Read More`;
-          }
-        });
-      });
-
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
-   
+    <script src="js/script.js"></script>
   </body>
 </html>
